@@ -1,0 +1,501 @@
+font-family: "Roboto", serif;
+font-family: "Quicksand", sans-serif;
+
+*,
+:after,
+:before{
+-webkit-box-sizing: border-box ;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+a:hover{
+   color: var(--primary-color) !important;
+}
+
+ul,
+ol{
+margin: 0;
+padding: 0;
+}
+
+:root{
+    --primary-color:#A82C48;
+    --secondary-color:#43121d;
+    --third-color:#f98169;
+    --white-color:#fff;
+    --text-color:#555;
+    --text-gray:#999;
+    --black-color:#000;
+    --primary-font: "Roboto", serif;
+    --secondary-font: "Quicksand", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+/*
+-----------------------------------
+custom scrollbar  design add here
+-----------------------------------
+*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--white-color) !important;
+}
+::-webkit-scrollbar-thumb{
+background: var(--primary-color) !important;
+}
+/*
+-----------------------------------
+custom scrollbar  design end here
+-----------------------------------
+*/
+
+h1{
+    font-size: 48px !important;
+    font-weight: 900;
+    margin-bottom: 48px !important;
+    color: var(--secondary-color) !important;
+    line-height: 48px !important;
+}
+h2{
+    font-weight: 700 !important;
+    font-size: 36px !important;
+    text-transform: capitalize;
+    font-family: var(--secondary-font) !important;
+    line-height: 48px !important;
+}
+h4{
+    color: var(--secondary-color)!important;
+    font-family: var(--secondary-font) !important;
+    font-size: 18px !important;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+p{
+    font-size: 18px !important;
+    color: var(--text-color) !important;
+    line-height: 28px !important;
+    letter-spacing: 1px;
+}
+
+span {
+    font-size: 18px !important;
+    color: var(--secondary-color) !important;
+    line-height: 28px !important;
+    letter-spacing: 1px;
+}
+
+.main-btn{
+    background-color: var(--primary-color);
+    display: inline-block;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 12px 23px !important;
+    line-height: 25px;
+    font-size: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px; 
+    font-weight: 600;
+    -webkit-transition: all .4s ease-out 0s;  */chrome and safari browser*/
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.white-btn {
+    background-color: var(--white-color);
+    display: inline-block;
+    text-transform: capitalize;
+    color: var(--black-color);
+    padding:10px 30px ;
+    line-height: 25px;
+    font-size: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px; 
+    font-weight: 600;
+    -webkit-transition: all .4s ease-out 0s;  */chrome and safari browser*/
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover{ background: var(--white-color) !important; color: var(--secondary-color) !important;}
+
+.white-btn:hover{ background: var(--primary-color); color: var(--white-color);}
+.navigation-wrap{ position: fixed; width: 100%; left: 0; z-index: 1000; -webkit-transition: all .3s ease out 0s;
+transition: all .3s ease-out 0s;
+}
+ .nav-item{
+    padding: 10px;
+    transition: all 200ms linear;
+ }
+.navbar-toggler:focus{
+outline: unset;
+border: unset;
+box-shadow: none;
+ }
+ .nav-link{
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+ }
+ .main-btn{
+padding: 5px 23px;
+margin-left: 10px;
+ }
+ /*change navbar style start in scroll function*/
+.navigation-wrap.scroll-on{
+position: fixed;
+top: 0px;
+left: 0;
+width: 100%;
+background: var(--white-color);
+box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.09);
+transition: all .15s ease-in-out 0s;
+ }
+ /*change navbar style end in scroll function*/
+
+
+/*
+-----------------------------------
+Banner section  design start here
+-----------------------------------
+*/ 
+ 
+ .banner{
+    background: url('../image/bg-1.jpg') no-repeat center;
+    background-size: cover ;
+    width: 100%;
+    padding: 170px 0 6px;
+    height: 100vh;
+
+ }
+/*
+-----------------------------------
+Banner section  design end here
+-----------------------------------
+*/
+
+/*
+-----------------------------------
+counter section  design start here
+-----------------------------------
+*/ 
+.counter-section{
+
+}
+
+.counter{
+background-color: var(--primary-color);
+padding: 40px 0px;
+}
+.counter p{
+color: var(--white-color)!important;
+text-transform: uppercase;
+}
+span {
+    font-size: 28px !important;
+    color: var(--white-color) !important;
+    line-height: 28px !important;
+    letter-spacing: 1px;
+}
+/*
+-----------------------------------
+counter section  design End here
+-----------------------------------
+*/ 
+
+/*
+-----------------------------------
+About section  design add here
+-----------------------------------
+*/
+.card img{ border-radius: 12px !important;}
+.title{
+    padding: 10px 25px 0px;
+}
+.title h2{ color: var(--primary-color) !important ; 
+    font-weight: 700 !important;
+    font-size: 36px !important;
+    line-height: 48px !important;
+
+}
+ .main-btn{
+    margin-left: 3px;
+}
+
+
+
+/*
+-----------------------------------
+About section  design End here
+-----------------------------------
+*/
+
+/*
+-----------------------------------
+Gallery section design css end here
+-----------------------------------
+*/
+.gallery-section{
+
+}
+.gallery{
+    padding: 10px 25px 0px;
+}
+ul li{
+    list-style: none;
+}
+.btn1 .main-btn{
+    margin-left: -9px;
+}
+/*
+-----------------------------------
+Gallery section design css end here
+-----------------------------------
+*/
+.gallery-section{
+
+}
+.gallery ul li{
+    color: var(--text-color);
+    font-size: 16px;
+    margin-left: 30px;
+    line-height: 32px ;
+    position: relative;
+}
+.gallery ul li::before{
+    position: absolute;
+    left: -35px;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    color: var(--primary-color);
+    display: inline-block;
+    font-weight: 900;   
+}
+/*
+-----------------------------------
+READ MORE section design css add here
+-----------------------------------
+*/
+.title-section{ 
+    background: url('../image/bg-2.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    height: 450px;
+}
+.t-body{ text-align: center;}
+.t-body h2 {
+    padding-top: 75px !important;
+    font-size: 38px !important;
+    color: var(--primary-color)!important;
+}
+/*
+-----------------------------------
+READ MORE section design css end here
+-----------------------------------
+*/
+
+/*
+-----------------------------------
+Expore Food design css Start here
+-----------------------------------
+*/
+.explore-sec{ padding-top: 10px; width: 100%; height: 100vh;     margin-bottom: 100px;}
+.explore-title{ text-align: center; padding: 45px 0px; }
+.explore-title h2{ color: var(--secondary-color);}
+.ex-img{ margin-bottom: 20px;}
+.card{ border: 0px!important; flex; margin-bottom: 10px; }
+.card img{border-radius: 10px !important; object-fit: cover;}
+.c-txt{ margin-bottom: 7px;}
+
+.c-txt h4 {
+    font-size: 20px !important;
+}
+.c-txt p{ font-size: 15px !important;}
+.c-txt span{ font-size: 21px !important; font-weight: bold; display: block; padding-bottom: 10px !important; border-bottom: 2px solid #eee ;}
+.c-txt  del { color: var(--text-color); margin-left: -73px !important;}
+
+/*
+-----------------------------------
+Expore Food design css end here
+-----------------------------------
+*/
+
+
+/*
+-----------------------------------
+Tesitmonial design css start here
+-----------------------------------
+*/
+.testmonial{ background-color: var(--primary-color);}
+.testmonial .carousel-item {
+    margin-top: 40px;
+    padding: 150px 50px;
+    background-color: #eee;
+    text-align: center;
+    border-radius: 16px;
+    margin-bottom: 17px;
+}
+.testmonial .carousel-caption img{ 
+        border-radius: 58%;
+        padding: 6px;
+        max-width: 80px;
+    }
+    .testmonial .carousel-caption p{ 
+        font-size: 22px !important;
+        line-height: 32px !important;
+        padding: 12px;
+    }
+    .testmonial .carousel-caption h5{ 
+        
+    }
+    .testmonial .carousel-indicators button.active{ 
+       opacity: 1;
+    }
+
+
+/*
+-----------------------------------
+Tesitmonial design css end here
+-----------------------------------
+*/
+
+/*
+-----------------------------------
+Feq design css start here
+-----------------------------------
+*/
+.feq-sec { width: 100%; height: 100vh;     padding-top: 45px;}
+.feq-titile h2 {
+    text-align: center;
+    padding-bottom: 63px;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}
+
+.f-body h4 {
+    position: relative;
+    left: 29px;
+    padding: 15px 0px;
+    letter-spacing: 1px;
+}
+
+.f-body p {
+    padding: 7px 0px;
+}
+
+.f-body h4::before{
+    position: absolute;
+    content: '\f4be';
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    font-weight: 900;
+    font-size: 20px;
+    left: -29px;
+}
+.f-body p{
+    padding: 7px 0px;
+}
+/*
+-----------------------------------
+Feq design css end here
+-----------------------------------
+*/
+
+/*
+-----------------------------------
+subscribe design css start here
+-----------------------------------
+*/
+.subscribe-sec{ margin-bottom: 45px;}
+.subscribe-sec h2{ }
+
+.subscribe-sec p {
+    font-size: 22px !important;
+    text-align: center;
+    line-height: 31px !important;
+    padding: 16px 0px !important;
+} 
+/*
+-----------------------------------
+subscribe design css end here
+-----------------------------------
+*/
+
+/*
+-----------------------------------
+Footer  design css start here
+-----------------------------------
+*/
+
+
+.footer{ width: 100%; padding: 44px; background: var(--primary-color); height: 44vh; text-align: center; margin: 0px;}
+.footer-logo h2{ color: #fcae61;font-size: 35px; font-weight: 700;padding: 2px 0px;
+}
+.footer-logo h2 span { color: #ffffff;}
+
+.footer-txt ul, li{
+    list-style: none; display: flex; justify-content: space-between; margin: 0px; padding: 2px; margin-top: 15px;
+}
+.footer-txt li{ font-size: 16px; font-weight: 400; color: var(--white-color); text-align: center;
+}
+.f-area ul, li{ list-style: none; display: flex; justify-content: space-between; margin: 0px;padding: 2px; margin-top: 11px }
+
+.f-area li {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--white-color);
+    text-align: center;
+    padding: 2px 10px;
+}
+    
+.txt-bar{ text-align: center;  padding: 25px; font-size: 12px; font-style: italic; letter-spacing: 1px; font-weight: 400;}
+
+.txt-bar p{ color: var(--white-color)!important; }
+/*
+-----------------------------------
+Footer  design css end here
+-----------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
